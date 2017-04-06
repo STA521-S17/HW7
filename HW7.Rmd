@@ -1,8 +1,10 @@
 ---
 title: "HW7 [Your Team Name Here]"
-author: "[Your Names Here]"
+author: '[Your Names Here]'
 date: "Due  April 14, 2017, late acceptance until April 15"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r setup, include=FALSE}
@@ -27,16 +29,26 @@ nes <- read.dta("nes5200_processed_voters_realideo.dta",
                    convert.factors=F)
 #  Clean data 
 
-#  filter data to include year, age, income, race, white, black, female, religion, south, state, region, maritial_status, party afilliation (as in HW3) ideology (as in HW3).   The response should be 0/1  with 1 = vote republican in the presidential election.
+# filter data to include year, age, income, race, white, black, female,
+# religion, south, state, region, maritial_status, party afilliation
+# (as in HW3) ideology (as in HW3).   
+# The response should be 0/1  with 1 = vote republican in the 
+# presidential election.
 
 #  remove NA's 
 
-# convert variables that are coded as numerical as factors (state, region, etc) 
+# convert variables that are coded as numerical as
+# factors (state, region, etc) 
 
 # create random split 50% sample for test and training
 set.seed(42)
 
-# Note the variable state has more than 50 levels, and I have not heard back from authors about a data dictionary.   You may decide how to handle this; ie. assume 1:50 are US and others are territories other locations and use the 1:50 ???  just document what you do.  (they are not sorted alphabetical)    Discuss how this limits your modelling
+# Note the variable state has more than 50 levels, and I 
+# have not heard back from authors about a data dictionary.  
+# You may decide how to handle this; ie. assume 1:50 are US and 
+# others are territories other locations and use the 1:50 ???  
+# just document what you do.  (they are not sorted alphabetical)   
+# Discuss how this limits your modelling
 ```
 
 

@@ -9,4 +9,4 @@ build:
     - script:
         name: Render R markdown
         code: |
-          Rscript -e "render('HW7.Rmd')"
+          Rscript -e "library(rmarkdown);render('HW7.Rmd')"

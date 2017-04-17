@@ -9,4 +9,4 @@ build:
     - script:
         name: Render R markdown
         code: |
-          Rscript -e "library(rmarkdown);render('HW7.Rmd')"
+          Rscript -e "install.packages('tree', repos='https://cloud.r-project.org');install.packages('mgcv', repos='https://cloud.r-project.org');library(rmarkdown);render('HW7.Rmd')"
